@@ -1,46 +1,44 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>SwitchedOn Password Generator</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="passwordGenerator.js"></script>
+    <meta charset="utf-8">
+    <title>SwitchedOn Password Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="passwordGenerator.js"></script>
 </head>
-	<body id="home">
-		<div class="container">
-			<div class="row"><h1>SwitchedOn Password Generator</h1></div>
-			<div class="row">
-						<medium>
-							This website will generate a random but easy to remember password using common words. The passwords generated are strong enough for use to protect sensitive information. <br/>
-							Passwords are based on <a href="http://xkcd.com/936/" title="'Password Strength' on xkcd">xkcd 936</a> and you can test the strenght of the generated passwords here:  <a href="https://howsecureismypassword.net/" target="_blank">How Secure Is My Password?</a>
-						</medium>
-			</div>
-			<div class="row">
-				<br/>	
-			</div>
-			<div class="jumbotron row" display: flex;>
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-3">
-
-								<a class="btn btn-primary btn-lg" href="#" role="button" display: flex;  justify-content: center; onclick="displayPassword();">Generate password</a>
-
-						</div>
-						<div class="col-xs-9"  style="padding-top:0.7%">
-							<h2 id="password" display: flex;  justify-content: center; style="padding:0;margin:0px;"></h2>
-						</div>
-					</div>
-					<div class="row">
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="alert alert-info">
-					<strong>Info</strong> Double click on the password and press CTRL + C to copy the password to your clipboard. 
-				</div>
-			</div>
-		</div>
-	</body>
+<body id="home">
+    <div class="container">
+        <div class="row"><h1>SwitchedOn Password Generator</h1></div>
+        <div class="row">
+            <medium>
+                This website will generate a random but easy to remember password using common words. The passwords generated are strong enough for use to protect sensitive information. <br />
+                Passwords are based on <a href="http://xkcd.com/936/" title="'Password Strength' on xkcd">xkcd 936</a> and you can test the strenght of the generated passwords here:  <a href="https://howsecureismypassword.net/" target="_blank">How Secure Is My Password?</a>
+            </medium>
+        </div>
+        <div class="row">
+            <br />
+        </div>
+        <div class="jumbotron row" display: flex;>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <a class="btn btn-primary btn-lg" href="#" role="button" display: flex; justify-content: center; onclick="displayPassword();">Generate password</a>
+                    </div>
+                    <div class="col-xs-9" style="padding-top:0.7%">
+                        <h2 id="password" display: flex; justify-content: center; style="padding:0;margin:0px;"></h2>
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="alert alert-info">
+                <strong>Info</strong> Double click on the password and press CTRL + C to copy the password to your clipboard.
+            </div>
+        </div>
+    </div>
+</body>
 </html>

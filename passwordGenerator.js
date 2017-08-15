@@ -17,9 +17,9 @@ function getRandomIndex() {
 
 function getPassword(length) {
     var temp = [];
-    for (i=0; i<length; i++) {
+    for (i = 0; i < length; i++) {
         var candidate = words[getRandomIndex()]
-        if (candidate.length > 3 && candidate.length < 13 && candidate.indexOf("-") === -1 && temp.indexOf(candidate) === -1){
+        if (candidate.length > 3 && candidate.length < 13 && candidate.indexOf("-") === -1 && temp.indexOf(candidate) === -1) {
             temp.push(candidate.toLowerCase());
         }
         else {
@@ -27,15 +27,15 @@ function getPassword(length) {
         }
 
     }
-    
+
     //Join Password into a single string
     var password = temp.join('-');
-    
+
     //Capatalize Password
     password = password.charAt(0).toUpperCase() + password.slice(1);
-    
+
     //TODO: Optionally insert a random underscore inside the password string
-    
+
     return password;
 }
 
@@ -44,7 +44,6 @@ function displayPassword() {
     document.getElementById("password").innerHTML = pw;
 }
 
-function getDictionarySize()
-{
-    document.getElementById("count").innerHTML = words.lenght; 
+function getDictionarySize() {
+    document.getElementById("count").innerHTML = words.lenght;
 }
